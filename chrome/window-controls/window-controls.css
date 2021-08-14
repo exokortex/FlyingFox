@@ -23,12 +23,12 @@
 }
 
 /* close button */
-.titlebar-close {
+/*.titlebar-close {
     -moz-appearance: none !important;
     fill: var(--red) !important;
     opacity: 0.7 !important;
     list-style-image: url(circle.svg) !important;
-}
+}*/
 
 .titlebar-close:hover {
     opacity: 1 !important;

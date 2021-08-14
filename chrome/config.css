@@ -1,9 +1,14 @@
 /* order of these files is important and should not be changed */
 
-@import "icons/extension-icons.css";
-@import "window-controls/wc-without-tabline.css";
+/* @import "icons/extension-icons.css"; */
+@import "window-controls/wc-without-tabline-r.css";
 @import "hide-tabline.css";
-@import "userChrome-static.css";
+@import "userChrome-hover.css";
+
+#TabsToolbar {
+    margin-top: -11px;
+    margin-left: -9px;
+}
 
 :root {
     --dark-0: #151d28;
@@ -42,8 +47,8 @@
     /* larger value moves window controls down,*/
     /* can be negative(moves controls up) */
     /* Experiemntal: 55px if tabline visible, -25px if tabline hidden */
-    --wc-left-space: 15px; /* add space to the left of window controls*/
-    --wc-right-space: 18px; /* add space to the right of window controls*/
+    --wc-left-space: -8px; /* add space to the left of window controls*/
+    --wc-right-space: 0px; /* add space to the right of window controls*/
     /* left-space shifts window-controls */
     /* if you want to shift window controls to the left: positive value */
     /* if you want to shift them to the right: smaller or negative value */

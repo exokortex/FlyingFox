@@ -1,7 +1,7 @@
 
 :root{ 
   --dark-0: #151D28;
-  --dark-base: #192330;
+  --dark-base: #2b2a33;
   --dark-1: #233143;
   --dark-2: #2A3B51;
   --dark-3: #374E6C;
@@ -16,7 +16,7 @@
   --yellow: #dbc074;
   --green: #5cb8a7;
   --red: #c94f6d;
-  --extension-icon-mask: grayscale(85%) invert(75%) sepia(8%) saturate(862%) hue-rotate(173deg) brightness(88%);
+  --extension-icon-mask: /*grayscale(85%) invert(75%) sepia(8%) saturate(862%) hue-rotate(173deg) brightness(88%)*/;
 }
 
 :root.incognito{ 
@@ -36,16 +36,16 @@
   --yellow: #C9B336;
   --green: #36C987;
   --red: #C9365D;
-  --extension-icon-mask: grayscale(85%) invert(13%) sepia(80%) saturate(3107%) hue-rotate(256deg) brightness(84%) contrast(93%);
+  --extension-icon-mask: /*grayscale(85%) invert(13%) sepia(80%) saturate(3107%) hue-rotate(256deg) brightness(84%) contrast(93%)*/;
 }
 
 
 :root{
     --tab-border-radius: 7px; /* border radius of tabs */
-    --animation-duration: 200ms; /* duration of different animations [0s: turn all animations off] */
-    --spacing: 14px; /* spacing between tabs. [<15px: compact tabs] */
-    --distance-from-edge: 10px; /* distance between tabs, and left-right edges of sidebar*/
-    --hover-text-spacing: 0.2; /* should be left alone. with hover sidebar, if text is visible in collapsed status, increase this */
+    --animation-duration: 100ms; /* duration of different animations [0s: turn all animations off] */
+    --spacing: 0px; /* spacing between tabs. [<15px: compact tabs] */
+    --distance-from-edge: 8px; /* distance between tabs, and left-right edges of sidebar*/
+    --hover-text-spacing: 0.3; /* should be left alone. with hover sidebar, if text is visible in collapsed status, increase this */
 
 
     --ease-in: cubic-bezier(0.32, 0, 0.67, 0);
@@ -174,7 +174,7 @@ tab-item:not(pinned) tab-closebox {
 :root.left tab-item tab-favicon {
     order: 10 !important;
     margin-right: calc(var(--collapsed-width)*0.25) !important;
-    transform: scale(120%) translateX(0px) !important;
+    transform: scale(150%) translateX(0px) !important;
 }
 
 :root.left tab-item .sound-button:after {
@@ -189,7 +189,7 @@ tab-item:not(pinned) tab-closebox {
 }
 
 :root.left tab-item:not(.pinned):hover tab-favicon {
-    transform: scale(120%) translateX(-20px) !important;
+    transform: scale(150%) translateX(-20px) !important;
 }
 
 :root.left tab-item:not([data-child-ids]):hover .label {
@@ -298,3 +298,6 @@ tab-item.active.contextual-identity-firefox-container-4 {
     border: none !important;
 }
 
+tab-item-substance{
+  height: 30px;
+}
